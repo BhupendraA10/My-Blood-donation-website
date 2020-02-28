@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<meta name="google-site-verification" content="9cFw8ac9whEMposJjeNVXqDdnnLZ3O4oLRrZ_H0IFI8" />
+
+
+
+	<title>BLOOD DONATION</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="style3.css"/>
+
+
+<style>
+	.item1
+	{
+		grid-area:div1;
+		background-color: rgba(100, 30, 10, 0.4);
+	}
+	.item1 img
+	{
+		padding-top: 0px;
+		margin-left: 760px;
+		background-size: cover;
+	}
+	.item2
+	{
+		grid-area:div2;
+		background-color: rgba(0, 300, 10, 0.4);
+	}
+	.item2 img
+	{
+		padding-top: 0px;
+		margin: 0px;
+	}
+	
+	.grid-container>div
+	{
+		padding: 5px;
+	}
+	.grid-container
+	{
+		display:grid;
+		grid-gap: 3px;
+		grid-template-areas: 
+		
+		'div1 div1 div1 div1 div1 div1'
+		'div2 div2 div2 div2 div2 div2'
+	}
+	.p1
+	{
+		float:left;
+		margin-top: -350px;
+		font-size: 30px;
+		padding-top: -100%;
+		color:#DC143C;
+	}
+	#d1
+	{
+		float:right;
+		background-size: cover;
+	}
+</style>
+
+</head>	
+
+<body>
+	<div>
+		<header>
+			
+			<nav>
+				<h1>Blood Donation</h1>
+				<ul id="font">
+					<li> <a class="home" href="">HOME</a></li>
+					<li> <a class="a" href="b.html">DONATION PROGRAM</a></li>
+					<li> <a class="a" href="sai staff info.html">STAFF LOGIN</a></li>
+					<li> <a class="a" href="INFO.html">STAFF INFO</a></li>
+					<li> <a class="a" href="login.html">LOG IN</a></li>
+					<li> <a class="a" href="About_Us.html">ABOUT US</a></li>
+					<li> <a class="a" href="Contact Us.html">CONTACT US</a></li>
+					<li> <a class="a" href="FAQ.html">FAQ</a></li>
+				</ul>
+			</nav>
+			<div class="bg">
+				<img src="img6.jpg">
+			</div>
+			<div class="grid-container">
+
+				<div class="item1">
+					<img src="img3.jpg" height="50%" width="50%">
+					<p class="p1">
+						“There is no great joy than saving a soul.”<br>
+“I have nothing to offer but blood, toil, tears and sweat”<br>
+ – Winston Churchill.<br>
+“A life may depend on a gesture from you, a bottle of Blood.”<br>
+“To give blood you need neither extra strength nor extra food,<br>
+ and you will save a life.”<br>
+					</p>
+				</div>
+
+				<div class="item2">
+					<img src="img9.jpg" height="30%" width="50%">
+					<img src="i7.jpg" height="50%" width="50%" id="d1">
+				</div>
+			</div>
+			<div id="container">
+<img class="slides" src="i3.jpg"/>
+<img class="slides" src="i2.jpg"/>
+<img class="slides" src="i1.jpg"/>
+<img class="slides" src="img2.jpg"/>
+<img class="slides" src="img5.jpg"/>
+<img class="slides" src="img4.jpg"/>
+<img class="slides" src="home.jpg"/>
+<button class="btn" onclick="plusindex(-1)" id="btn1">&#10094</button>
+<button class="btn" onclick="plusindex(1)" id="btn2">&#10095</button>
+</div>
+			
+		</header>
+	</div>
+	
+
+<div class="division"></div>
+<div class="x">
+	<h2 class="b">GO FOR</h2><br>
+	<h1 class="c">BLOOD DONATION</h1>
+	<br>
+	<button class="d">
+		<a href="signup.html">DONATE <span style="color:green">here!</span></a>
+	</button>
+</div>
+<footer id="ftr">
+	<small>
+		Copyright &copy; BLOOD DONATION
+	</small>
+</footer>
+
+
+</body>
+<script>
+var index=1;
+function plusindex(n)
+{
+index=index+n;
+showimage(index);
+}
+showimage(1);
+function showimage(n)
+{
+var i;
+var x=document.getElementsByClassName("slides");
+if(n>x.length){index =1};
+if(n<1){index=x.length};
+for(i=0;i<x.length;i++)
+{
+x[i].style.display="none";
+}
+x[index-1].style.display="block";
+}
+</script>
+</html>
